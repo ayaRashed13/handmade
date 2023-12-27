@@ -1,0 +1,2365 @@
+@font-face {
+  font-family: Cairo;
+  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+  src: url(../Fonts/Cairo/static/Cairo-SemiBold.ttf)format('truetype');
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+  src: url(../Fonts/Cairo/static/Cairo-Black.ttf)format('truetype');
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url(../Fonts/Cairo/Cairo-VariableFont_slnt\,wght.ttf);
+  src: url(../Fonts/Cairo/static/Cairo-Regular.ttf)format('truetype');
+}
+
+:root {
+  --btnColor: #A5410A;
+  --Brown: #3D2C2C;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo {
+  padding-top: auto;
+  height: 3.25rem;
+  flex-shrink: 0;
+}
+
+.logo h2 {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: var(--brown, #3D2C2C);
+  text-align: right;
+  font-family: Cairo;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117.687%;
+
+
+}
+
+nav {
+  height: 5.25rem;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin-right: auto;
+}
+
+nav li {
+  text-align: right;
+  display: inline-block;
+}
+
+nav li a img:hover {
+  color: red !important;
+}
+
+nav .pages-link li a {
+  margin-left: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+nav li a i {
+
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+nav li a i:hover {
+  color: #934B00 !important;
+}
+
+
+
+nav .search input {
+  width: 19.08469rem;
+  border-radius: 1.5625rem;
+  background: #FFF;
+}
+
+nav .search input::placeholder {
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.40);
+  font-family: Cairo;
+  font-size: 1.25rem;
+  font-weight: 400;
+
+}
+
+/****************** Sign up ******************************/
+.leftSide {
+  background-image: url(../images/logIn-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+
+.note {
+  position: relative;
+  left: 25%;
+  height: fit-content;
+  width: 70%;
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(5px);
+  text-align: right;
+
+}
+
+.note p {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  /* text-align: right; */
+  font-family: Cairo;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+
+.rightSide {
+  text-align: center;
+}
+
+.rightSide h1 {
+  color: #000;
+  font-family: Cairo;
+}
+
+.rightSide form {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2.8125rem;
+  text-align: center;
+}
+
+/**/
+.rightSide form input[type=text],
+.rightSide form input[type=password],
+.rightSide form input[type=date],
+.rightSide form input[type=email] {
+  width: 150%;
+  height: 2.99rem;
+  border-radius: 0.375rem;
+  border: 1px solid #D3D1D1;
+}
+
+.rightSide form input[type=radio],
+label[for='radioBuyer'],
+label[for='radioSeller'] {
+  /* width: 3rem; */
+  height: 1rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 5px;
+  /* height: 1rem; 
+  border-radius: 0.375rem;
+  border: 1px solid #D3D1D1;*/
+}
+
+.rightSide form .signUpBtn {
+  width: 150%;
+  height: 105%;
+  border-radius: 0.375rem;
+  background: var(--btnColor);
+  border: var(--btnColor) 1px solid;
+  color: #FFF;
+  font-size: 1.25rem;
+}
+
+.rightSide form .signUpBtn:hover {
+  background: white;
+  border: var(--btnColor) 1px solid;
+  color: var(--btnColor);
+
+}
+
+/* .rightSide form input::placeholder {
+  display: flex;
+  flex-shrink: 0;
+  color: #4A4844;
+  text-align: right;
+  font-family: Inter;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+} */
+
+.password-container {
+  position: relative;
+
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+
+  box-sizing: border-box;
+}
+
+.rightSide .password-container .fa-eye,
+.rightSide .password-container .fa-eye-slash {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  cursor: pointer;
+  color: lightgray;
+}
+
+.rightSide form p {
+  color: rgba(74, 72, 68, 0.66);
+  font-weight: 400;
+  margin-left: 25%;
+}
+
+.rightSide form p a,
+.rightSide form p {
+  display: flex;
+  width: 16rem;
+  height: 2.0625rem;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.0625rem;
+}
+
+.rightSide form p a {
+  color: var(--btnColor);
+  font-weight: 700;
+
+}
+
+.rightSide .forgetPass,
+.rightSide .forgetPass a {
+  margin-right: 0%;
+  text-decoration: none;
+  color: rgba(61, 44, 44, 0.85);
+  text-align: right;
+  font-family: Inter;
+  font-size: 0.9375rem;
+  font-weight: 300;
+}
+
+.rightSide .forgetPass a:hover {
+  text-decoration: underline;
+  color: var(--btnColor);
+
+}
+
+/******* end nav *****************/
+
+
+
+/********** start المنتجات**********/
+.Tcontant p {
+  color: #3D2C2C;
+  font-family: Cairo;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 100.687%;
+
+}
+
+.TproductPageSelect select {
+  color: #3D2C2C;
+  font-family: Cairo;
+  font-size: 23px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  align-self: baseline;
+  width: 125px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  line-height: 107.687%;
+  background-image: url(../images/Arrow\ 2.svg);
+  background-repeat: no-repeat;
+  background-position: left 0em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+}
+
+
+.TproductPageSelect i {
+  position: relative;
+  left: 15px;
+  bottom: 5px;
+}
+
+.Tcard {
+  /* width: 400px; */
+  height: 710px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.TcardDivimg {
+  /* width: 344px; */
+  /* height: 400px; */
+  overflow: hidden;
+  border-radius: 9px;
+  margin: 23px 0px 10px 0px;
+  align-self: center !important;
+  align-content: center !important;
+  background-color: #0EB0BA;
+}
+
+.TcardDivimg img {
+  /* width:350px; */
+  height: 400px;
+  object-fit: fill;
+  object-position: center;
+}
+
+
+.TLOVE {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFF;
+  border: none;
+  outline: none;
+  text-align: center;
+
+}
+
+.TLOVE i {
+  /* margin: 7.5px 5.5px 0px 3px; */
+  font-size: 19px;
+  color: #3D2C2C;
+  justify-self: center;
+  /* cursor: pointer; */
+}
+
+.TLOVE i:hover {
+  color: #BA1A1A;
+  transition: 0.4s;
+}
+
+
+.TcardBTN {
+  background-color: var(--btnColor);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  padding: 7px 50px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+  font-family: Cairo;
+  font-size: 19px;
+}
+
+.TcardBTN:hover {
+  background-color: #FFF;
+  color: var(--btnColor);
+  border: 1px solid var(--btnColor);
+}
+
+.tcardtextg {
+  color: #737373;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 0px;
+}
+.tcardtextg a{
+  text-decoration: none;
+  color: #737373;
+}
+.tcardtextp {
+  color: #000;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.tstar {
+  text-align: right;
+  line-height: 0px;
+
+}
+
+.tstaricon {
+  color: #BFBFBF;
+  font-size: 20px;
+  width: 165px;
+}
+
+.Tstartext {
+  color: #464920;
+  font-family: Cairo;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+
+
+.disc {
+  color: #BA1A1A;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  background-color: #ba1a1a28;
+  padding: 3px;
+
+}
+
+
+/******* نهاية المنتجات ********/
+
+/******* بداية المفضله فارغه ****/
+.Tempty {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+  color: #000;
+  font-family: Cairo;
+}
+
+.Tempty img {
+  width: 216px;
+  height: 213px;
+}
+
+.Tempty h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.Tempty p {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+
+/***** نهاية المفضله فارغة******/
+
+/*******بداية المفضلة***********/
+
+.TcardHorizDivimg {
+  /* width: 222px; */
+  height: 220px;
+  overflow: hidden;
+  border-radius: 9px;
+  /* margin: 10px 10px; */
+  align-self: center !important;
+  align-content: center !important;
+  background-color: #0EB0BA;
+  /* display: flex; */
+
+}
+
+.TcardHorizDivimg img {
+  /* width: 223px; */
+  height: 220px;
+  object-fit: fill;
+  object-position: center;
+}
+
+.tcard {
+
+  border-radius: 24px;
+  border: 1px solid #E1E1E1;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.tcardtextpfav {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.7rem !important;
+}
+
+.discfav {
+  font-size: 18px;
+  line-height: 3.5 !important;
+}
+
+.TcardBTNfav {
+  padding: 7px 25px;
+}
+
+.Tdelete {
+  border: none;
+  outline: none !important;
+  text-align: center;
+  color: #BA1A1A;
+  background-color: transparent;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.Tdelete:hover {
+  border: #BA1A1A solid 1px;
+}
+
+.Tdelete img {
+  height: 28px;
+  position: relative;
+  top: -2px;
+}
+
+
+/*******نهاية المفضلة***********/
+
+/********start footer**********/
+footer {
+  background-color: #817757;
+  width: 100%;
+  height: 350px;
+  text-align: end;
+  color: #FFF;
+}
+
+.footerlogo h2 {
+  font-family: Cairo;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 117.687%;
+}
+
+.footer {
+  padding-top: 53px;
+  /* margin-left: 70px; */
+}
+
+.footer h3 {
+  font-family: Cairo;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 3px;
+}
+
+.footer p {
+
+  text-align: right;
+  font-family: Cairo;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footerLinks a {
+  color: white;
+}
+
+.footerLinks img {
+  width: 35px;
+  height: 35px;
+}
+
+/*******end footer***********/
+
+/******** start product details ********/
+.right-sideInPD {
+
+  border-left: #9b9a9a solid 0.6px;
+
+}
+
+.imagesPH {
+  width: 606px;
+  height: 465px;
+  position: relative;
+}
+
+.rectangle-3022 {
+  width: 451px;
+  height: 463px;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+}
+
+.sideImagesPH {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 135px;
+  height: 429px;
+  position: absolute;
+  top: 5%;
+}
+
+/* .rectangle-3023,
+.rectangle-3024,
+.rectangle-3025 {
+  border-width: 1px;
+  flex-shrink: 0;
+  width: 135px;
+  height: 133px;
+  position: relative;
+} */
+
+.left-sideInPD h2 {
+  color: var(--black, #000000);
+  text-align: right;
+  font: 400 36px/47px "Cairo", sans-serif;
+  position: relative;
+  width: 631px;
+  height: 95px;
+}
+
+.RealDetailes {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.RealDetailes h2 {
+  color: var(--black, #000000);
+  text-align: right;
+  font: 400 36px/47px "Cairo", sans-serif;
+  position: relative;
+  width: 631px;
+  height: 95px;
+
+
+}
+
+.RealDetailes .brand {
+  color: #737373;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.sharing_icons i,
+.sharing_icons a {
+  color: #605D5D;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 3%;
+  padding-right: 0%;
+  text-decoration: none;
+
+}
+
+.Product_sharing .BTNlove {
+
+  border-radius: 0.375rem;
+  border: 1px solid #817757;
+  background: var(--Color, #FFF);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.detailList .details_headlines ul {
+  list-style: none;
+  margin-right: auto;
+  border-bottom: #000 solid 1px;
+}
+
+.detailList .details_headlines li,
+.detailList .details_headlines li a {
+  color: var(--BROWN, #3D2C2C);
+  text-align: right;
+  font-family: Cairo;
+  font-size: 1.65rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 117.687% !important;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.detailList .details_headlines li a:hover {
+  color: #817757;
+  font-family: Cairo;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 117.687%;
+
+}
+
+.detailList .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 28.3125rem;
+  height: 24.9375rem;
+  padding: 0rem 3.75rem 1.9375rem 3.75rem;
+  gap: 2.75rem;
+  flex-shrink: 0;
+  border-radius: 1.5rem;
+  background: var(--Color, #FFF);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.20);
+}
+
+.detailList .frame .div,
+.detailList .frame .div-2 {
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.detailList .frame .div {
+  flex-direction: column;
+}
+
+.detailList .frame .div-2 {
+  gap: 5.25px;
+}
+
+.detailList .frame .text-wrapper,
+.detailList .frame .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.75px;
+  font-family: "Manrope-Bold", Helvetica;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+
+.detailList .frame .text-wrapper {
+  font-weight: 800;
+  color: black;
+  font-size: 40px;
+  line-height: 96px;
+}
+
+.detailList .frame .text-wrapper-2 {
+  font-weight: 700;
+  color: white;
+  font-size: 12px;
+  text-align: left;
+  line-height: 15px;
+  direction: rtl;
+}
+
+.detailList .frame .text-wrapper-3,
+.detailList .frame .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  font-family: "Manrope-Medium", Helvetica;
+  font-weight: 500;
+  color: grey;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.detailList .frame .text-wrapper-3 {
+  margin-top: -0.75px;
+}
+
+.detailList .frame .star {
+  position: relative;
+  width: 42px;
+  height: 42px;
+}
+
+.detailList .frame .img {
+  position: absolute;
+  width: 2.625rem;
+  height: 2.625rem;
+  top: 1px;
+  left: 4px;
+}
+
+.detailList .frame .div-wrapper,
+.detailList .frame .div-3,
+.detailList .frame .div-4 {
+  align-items: center;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.detailList .frame .div-wrapper {
+  justify-content: center;
+  gap: 7.5px;
+  padding: 7.5px 18px;
+  background-color: black;
+  border-radius: 52.5px;
+
+}
+
+.detailList .frame .div-3 {
+  gap: 9.75px;
+}
+
+.detailList .frame .div-4 {
+  justify-content: center;
+  gap: 3px;
+}
+
+.detailList .frame .div-5 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4.5px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+
+.detailList .frame .star-wrapper {
+  position: relative;
+  width: 15.75px;
+  height: 15.75px;
+}
+
+.detailList .frame .star-2 {
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  top: 1px;
+  left: 2px;
+}
+
+.detailList .frame .div-6,
+.detailList .frame .div-7 {
+  flex-direction: column;
+  align-items: flex-start;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.detailList .frame .div-6 {
+  gap: 7.5px;
+}
+
+.detailList .frame .div-7 {
+  gap: 17.25px;
+}
+
+
+.detailList .frame .rectangle,
+.detailList .frame .rectangle-2,
+.detailList .frame .rectangle-3,
+.detailList .frame .rectangle-4,
+.detailList .frame .rectangle-5 {
+  position: relative;
+  height: 6px;
+  background-color: black;
+  border-radius: 7.5px;
+}
+
+.detailList .frame .rectangle {
+  width: 195px;
+}
+
+.detailList .frame .rectangle-2 {
+  width: 126px;
+}
+
+.detailList .frame .rectangle-3 {
+  width: 102.75px;
+}
+
+.detailList .frame .rectangle-4 {
+  width: 60.75px;
+}
+
+.detailList .frame .rectangle-5 {
+  width: 26.25px;
+}
+
+#desc a {
+  color: #817757;
+  font-family: Cairo;
+  font-style: normal;
+  font-weight: 800;
+  border-bottom: #817757 solid 2px;
+}
+
+
+#instrPRO,
+#reviewsPRO,
+#manuIMG {
+  display: none;
+}
+
+/********** end of Product details*********/
+
+
+/********** start of Inbox*********/
+
+.side-bar {
+  /* width: auto; */
+  margin-left: auto;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+
+}
+
+.side-bar li a {
+  text-decoration: none;
+  color: #000;
+  text-align: right;
+  font-family: Cairo;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.side-bar li:hover {
+  background-color: #EEE;
+  width: 100% !important;
+}
+
+.side-bar ul {
+  list-style: none;
+  border-left: #9B9A9A solid 1px;
+
+}
+
+.side-bar .logout a {
+  text-decoration: none;
+  color: #93000A;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117.687%;
+}
+
+.inbox {
+  margin-right: auto;
+}
+
+.inbox h4 {
+  color: #817757;
+  font-family: Cairo;
+  font-style: normal;
+  font-weight: 800;
+
+}
+
+
+.msg .overlay {
+  overflow: hidden !important;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #84746A;
+}
+
+.msg .overlay img {
+  text-align: center;
+  margin-right: -18px;
+  width: 100px;
+}
+
+.msg h5 {
+  color: #817757;
+  font-family: Cairo;
+  font-size: 1.25rem;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 117.687%;
+}
+
+.msg p {
+  color: #84746A;
+  font-family: Cairo;
+  font-size: 1rem;
+  /* font-style: normal; */
+  font-weight: 500;
+}
+
+
+.inbox .edit p {
+  color: white;
+  background-color: #817757;
+  cursor: pointer;
+}
+
+.inbox .edit p span {
+  display: none;
+}
+
+/********** end of Inbox*********/
+
+/********** start of seller Products*******/
+
+
+.sellerPro form {
+  border-radius: 0.5rem;
+}
+
+.sellerPro form input {
+  background: #F8FAFB;
+}
+
+.sellerPro form input::placeholder {
+  font-family: Cairo;
+  font-weight: 500;
+}
+
+.sellerPro form i,
+.sellerPro form input::placeholder {
+  color: #C1CACE;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: normal;
+}
+
+.sellerPro form i {
+  position: absolute;
+  top: 2.5%;
+  right: 20%;
+  display: block;
+}
+
+.sellerPro form input:focus i {
+  display: none !important;
+  /* color: #5F0D0D; */
+}
+
+.sellerPro .sellerLogo img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  /* text-align: left; */
+}
+
+.sellerPro .sellerLogo h6 {
+  color: #000;
+  font-family: Cairo;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.sellerPro .sellerPro-desc {
+  color: #605D5D;
+  text-align: justify;
+  font-family: Cairo;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 169.687%;
+  /* 2.12106rem */
+}
+
+.sellerPro .sidebar li a i {
+  color: #ADB7BC;
+  font-size: 1.2rem;
+
+}
+
+.sellerPro .sidebar li a {
+  text-decoration: none;
+  color: #000;
+  text-align: right;
+  font-family: Cairo;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.sellerPro .sidebar li:hover {
+  background-color: #EEE;
+  width: 100% !important;
+
+}
+
+.sellerPro .sidebar li:hover a {
+  color: black;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.sellerPro .sidebar li:hover i {
+  color: black !important;
+}
+
+
+.sellerPro .sidebar ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.sellerPro .sidebar .logout a {
+  text-decoration: none;
+  color: #93000A;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117.687%;
+}
+
+/********** end of seller Products*******/
+
+/********** start of seller orders*******/
+.ordersLabel {
+  background-color: #F7F9FA;
+}
+
+.ordersLabel h5 {
+  text-align: center;
+  color: #A6A9AA;
+  font-family: Cairo;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ordersData img {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 2.5rem;
+}
+
+.ordersData h6 {
+  text-align: center;
+  color: #000;
+  font-family: Cairo;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.ordersData .date small {
+  color: #A7AEB1;
+  font-family: Cairo;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ordersData .pendding {
+  color: #3D2C2C;
+  font-family: Cairo;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 0.3125rem;
+  background-color: #DFF0FF;
+}
+
+.ordersData .delivered {
+  color: #78C278;
+  font-family: Cairo;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 0.3125rem;
+  background-color: #E6FDE6;
+}
+
+.ordersData .underManuf {
+  color: #FAA86D;
+  font-family: Cairo;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: 0.3125rem;
+  background-color: #FFF4DF;
+}
+
+
+
+
+/********** end of seller orders*******/
+
+/********** start of seller main*******/
+.statis h5 {
+  color: #93A3AB;
+  font-family: Cairo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.statis p {
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Cairo;
+
+}
+
+.statis p .todayRev {
+  color: #C56565;
+  font-size: 0.72369rem;
+  font-weight: 700;
+  border-radius: 0.72369rem;
+  background-color: #F4E3E3;
+}
+
+.statis p .totalRev {
+  color: #65C565;
+  font-size: 0.72369rem;
+  font-weight: 700;
+  border-radius: 0.72369rem;
+  background-color: #E3F4E3;
+}
+
+.newOrders p {
+  color: #ACB7BD;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.015rem;
+}
+
+/********** end of seller main*******/
+
+
+/********** start of home*********/
+header {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  min-height: 70vh;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url(../images/header.svg); */
+  background-position: center;
+  background-size: cover;
+}
+
+#background-video{
+  width:93vw;
+  /* height:90vh; */
+  margin-left:-5%; 
+  /* margin-right: -50%;
+  /* position: absolute; */
+  /* right: 1px; */
+  /* left: -6%; */
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.headtxt h2 {
+  width: 46%;
+  height: 20%;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  text-align: end;
+  color: white;
+}
+
+.headline {
+  background: linear-gradient(to right, #FCF6E9, #F5E29C);
+  width: 15%;
+  height: 50px;
+  text-align: end;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  position: relative;
+  left: 82%;
+}
+
+.mycatg {
+  margin-right: 7%;
+}
+
+.mycatg2 {
+  margin-top: -7%;
+}
+
+.catg {
+  margin-left: 3.3%;
+
+}
+
+.catg img {
+  width: 130%;
+  height: 70%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1));
+  border-radius: 7%;
+  z-index: 1;
+
+}
+
+.catg h5 {
+  z-index: 2;
+  position: relative;
+  margin-top: -20%;
+  left: 58%;
+  color: white;
+}
+
+.dstyle{
+  direction: rtl; 
+  color: white;
+  margin-top:-15%;
+  margin-right: 10%;
+}
+.doffer {
+  background-color: #E1C8A3;
+  margin: 3%;
+}
+
+.doffer img {
+  width: 90%;
+  height: 75%;
+  padding-bottom: 7%;
+  margin-left: -4%;
+  margin-top: -9%;
+}
+
+.doffer h3 {
+  text-align: end;
+  color: white;
+  margin-top: 10%;
+  margin-right: 5%;
+}
+
+.doffer h2 {
+  text-align: end;
+  color: #5F0D0D;
+  margin-right: 5%;
+}
+
+.doffer button {
+  width: 27%;
+  height: 13%;
+  background-color: #D63B21;
+  border-radius: 10px;
+  border: #D63B21;
+  color: white;
+  padding-bottom: 5%;
+  position: relative;
+  left: 68%;
+  top: 5%;
+  font-size: 150%;
+}
+
+.doffer2 {
+  margin-top: 4%;
+
+}
+
+.doffer2img {
+  width: 80%;
+  height: 80%;
+}
+
+.doffer2img2 {
+  position: relative;
+  left: 9%;
+  bottom: 39%;
+  width: 10%;
+  height: 10%;
+}
+
+.doffer2 h6 {
+  text-align: end;
+  width: 60%;
+  color: white;
+  position: relative;
+  top: -7%;
+  left: 27%;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.dcardd {
+  margin: 0 0.5em;
+
+  border: none;
+  border-radius: 0;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width:500px) {
+  .dcardd img {
+    height: 11em;
+  }
+}
+
+.dheart i {
+  min-height: 5%;
+  /* margin-top: 5%; */
+  margin-right: -25%;
+  border: none;
+  border-radius: 100%;
+  color: rgb(73, 73, 73);
+  z-index: 6;
+  background-color: white;
+  height: 7%;
+  width: 8%;
+  text-align: center;
+  padding-top: 3%;
+  font-size: 150%;
+}
+
+.dheart2 i {
+  min-height: 5%;
+  margin-right: -25%;
+  border: none;
+  border-radius: 100%;
+  color: rgb(73, 73, 73);
+  z-index: 6;
+  background-color: white;
+  height: 7%;
+  width: 8%;
+  text-align: center;
+  padding-top: 3%;
+  font-size: 150%;
+}
+
+.dheart i:hover {
+  color: #5F0D0D;
+
+}
+
+.dheart img {
+  margin-left: 17%;
+  height: 75%;
+  width: 100%;
+}
+
+.dheart2 img {
+
+  height: 100%;
+  width: 100%;
+}
+
+.dshop {
+  width: 25%;
+  height: 25%;
+  position: relative;
+  top: -35%;
+  right: 55%;
+}
+
+.dcard {
+
+  width: 27%;
+  height: 500px;
+
+}
+
+.dcard2 {
+  width: 27%;
+}
+
+
+.dbody {
+  margin-top: -40%;
+  text-align: end;
+}
+
+.dbody2 {
+  position: relative;
+  left: 28%;
+
+}
+
+.dbody2 p {
+  color: gray;
+}
+
+.headline h5 {
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
+.headline a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  width: 250%;
+}
+
+/*********end of home**********/
+
+/*********تأكيد الطلبيه******/
+
+#dconfirm {
+  direction: rtl;
+}
+
+.dgray {
+  color: gray;
+  margin-left: 3%;
+}
+
+.rightcard img {
+  width: 25%;
+  height: 2%;
+  margin: 2%;
+  display: inline;
+}
+
+.rightcard1 {
+  border: solid #efefee .5px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px#efefee;
+  margin-top: 3%;
+}
+
+.seccol {
+  margin-right: 6%;
+  margin-top: 4%;
+}
+
+.thirdcol {
+  margin-right: 20%;
+  margin-top: 4%;
+
+}
+
+.thirdcol h6 {
+  color: #B81A1A;
+  margin-top: 25%;
+  margin-right: 65%;
+}
+
+.discount {
+  text-decoration: line-through;
+  margin-right: -50%;
+}
+
+.discount2 {
+  color: #B81A1A;
+  background-color: #FFDCC5;
+  margin-right: 50%;
+}
+
+.wrapper {
+  height: 100px;
+  margin-right: -10%;
+  min-width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper span {
+  width: 20%;
+  height: 32%;
+  padding-bottom: 3%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 190%;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  border: solid;
+  margin: 1% auto;
+  padding: 1% auto;
+  background-color: #5E6135;
+
+}
+
+.wrapper span.num {
+  font-size: 170%;
+  color: #3D2C2C;
+  background-color: white;
+  border: none;
+  pointer-events: none;
+}
+
+.finalorder {
+  text-align: center;
+  border: solid #efefee .5px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px#efefee;
+  margin-top: 1%;
+  position: relative;
+  left: -10%;
+}
+
+.dleft {
+  font-weight: bold;
+}
+
+.dright {
+  margin-right: 6%;
+  margin-bottom: 15%;
+  text-align: end;
+}
+
+.dbtn {
+  background-color: #817757;
+  border: solid #817757;
+  color: white;
+  height: 80%;
+  padding-bottom: 1%;
+  width: 12%;
+  border-radius: 5px;
+}
+
+.dbtn:hover {
+  color: #817757;
+  background-color: white;
+  border: solid var(--btnColor) 1px;
+}
+
+.dbtn1 {
+  margin-right: 1%;
+  background-color: white;
+  width: 9%;
+  height: 80%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+  color: #817757;
+  border: solid #817757 1px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.dnone {
+  display: none;
+}
+
+/*******تأكيد الطلبية 2********/
+.dconfirm2 {
+
+  text-align: center;
+}
+
+.dconfirm2 img {
+  width: 25%;
+  height: 25%;
+  margin: 5% auto;
+  margin-top: 1%;
+}
+
+/***********سلة التسوق************/
+.dshop2 {
+  width: 11%;
+  height: 11%;
+  margin-right: 87%;
+  margin-top: -25%;
+  margin-bottom: -20%;
+}
+
+.dcarp {
+  color: var(--BROWN, #3D2C2C);
+  text-align: right;
+  font-family: Cairo;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 117.687%;
+}
+
+/***********************/
+/*******و انشاء حساب للبيع
+ بدايه حسابي******/
+
+.ThesapySideBar {
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.ThesapySideBar li a {
+  color: #3D2C2C;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 21.5px;
+  font-weight: 500;
+  line-height: 17%;
+  text-decoration: none;
+
+
+}
+
+.ThesapySideBar li:hover {
+  background-color: #EEE;
+}
+
+.tactive {
+  /** بديه لل li اللي في الصفحه  اللي انا واقفه فيها عشان يبقا باين اني مختراها**/
+  background-color: #EEE
+}
+
+.Thesapybtn {
+  color: #93000A;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 117.687%;
+  margin-right: 150px;
+  margin-bottom: 50px;
+}
+
+.ThesapySideBar li a img {
+  width: 28px;
+  height: 24px;
+  position: relative;
+  bottom: 3px;
+}
+
+.Thesapy h3 {
+  color: #817757;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117.687%;
+  /* 28.245px */
+}
+
+.Thesapy a {
+  color: #5E6135;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.TUSER h4,
+.Tform label {
+  color: #3D2C2C !;
+  text-align: right;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.TUSER p {
+  color: #605D5D;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.TUSER div,
+.Tform .tPass,
+.taddress {
+  border-radius: 6px;
+  border: 1px solid #84746A;
+  padding: 5px 9px;
+}
+
+.TUSER input,
+.tPass input,
+.taddress input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  color: #605D5D;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.Tform label {
+  font-size: 19px;
+}
+
+.Tform {
+  position: relative;
+}
+
+.TChangPass {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  margin-top: 20px;
+}
+
+.Tpassword {
+  color: #605D5D !important;
+  text-align: right !important;
+  font-family: Inter !important;
+  font-size: 19px !important;
+  font-weight: 500 !important;
+}
+
+.tPass i {
+  color: #84746A;
+  z-index: 10;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.tPass i.hidepasst::before {
+  content: "\f070";
+  color: #84746A;
+  z-index: 10;
+}
+
+.tinput {
+  color: #605D5D;
+  text-align: right;
+  /* font-family: Cairo; */
+  padding: 8px 5px;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.tinput.form-control:focus {
+  box-shadow: none !important;
+}
+
+.tdateBD[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 7px;
+  color: transparent;
+  background: none;
+  padding: 5px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.BDdateTicon {
+  color: #AEA7A7;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+
+.Td {
+  color: #000;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 34px;
+  font-weight: 500;
+
+}
+
+/*******  بداية الطلبات*****/
+
+.step-wizard {
+
+  /* display: flex; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-wizard-list {
+  list-style-type: none;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.step-wizard-item {
+  padding: 0 20px;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 170px;
+  position: relative;
+}
+
+.step-wizard-item+.step-wizard-item:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 19px;
+  background: #D0D0D0;
+  width: 100%;
+  height: 4px;
+  transform: translateX(-50%);
+  z-index: -10;
+}
+
+.progress-count {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+
+.progress-count:after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  background: #6B8C37;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -10;
+}
+
+.progress-count:before {
+  content: "";
+  height: 10px;
+  width: 20px;
+  border-left: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%) rotate(-45deg);
+  transform-origin: center center;
+}
+
+.progress-label,
+.progress-labell {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #3D2C2C;
+  text-align: center;
+  font-family: Cairo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+
+}
+
+.progress-labell {
+  color: #5E6135;
+  margin: 0;
+  font-weight: 600;
+  line-height: 117.687%;
+
+}
+
+.current-item .progress-count:before,
+.current-item~.step-wizard-item .progress-count:before {
+  display: none;
+}
+
+.current-item~.step-wizard-item .progress-count:after {
+  background-color: #fff;
+  border: #D7D2D2 2px solid;
+}
+
+.current-item .progress-count:after {
+  background: #fff;
+  border: 2px solid #6B8C37;
+}
+
+@media (max-width:980px) {
+  .step-wizard-item {
+    min-width: 85px;
+  }
+
+  .ThesapySideBar li a {
+    line-height: 21px;
+
+  }
+}
+
+/* @media (max-width:600px) {
+    .step-wizard-item {
+      min-width: 85px;
+    }  
+  } */
+@media (max-width:300px) {
+  .step-wizard-item {
+    min-width: 55px;
+  }
+
+  .ThesapySideBar li a {
+    line-height: 12px;
+
+  }
+}
+
+.finalordert {
+  left: 0px !important;
+  margin-top: 30px;
+
+}
+
+.finalordert h6 {
+  color: #3D2C2C;
+  font-family: Cairo;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 30px 0px 25px 0px;
+  border-bottom: 2px solid #E1E1E1;
+  width: 100%;
+}
+
+.th5 {
+  color: #3D2C2C !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 28px;
+  /* 175% */
+}
+
+/***** التقييم****/
+
+.Trate {
+  color: #755945;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 25px;
+  font-weight: 500;
+}
+.Trating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+.tscol p {
+  color: #737373;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.tscol h5 {
+  color: #3D2C2C;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.ptrate {
+  color: #3D2C2C;
+  text-align: right;
+  font-family: Inter;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 2px;
+}
+
+.tPass .Trating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+
+}
+
+.Trating input[type="radio"] {
+  display: none;
+}
+
+.Trating label {
+  font-size: 2rem !important;
+  color: #ddd !important;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.Trating input[type="radio"]:checked~label {
+  color: #ffc107 !important;
+}
+
+.Trating label::before {
+  content: "\2605" !important;
+  position: absolute !important;
+  opacity: 0 !important;
+}
+
+.Trating input:checked~label:before {
+  opacity: 1 !important;
+}
+
+.TBack {
+  border: 1px solid var(--btnColor);
+  color: var(--btnColor);
+  background-color: #FFF;
+
+}
+
+.TBack:hover {
+  color: #fff;
+  background-color: var(--btnColor);
+
+}
+
+
+/***********الرسائل الوارده الفارغه***************/
+.nomessgT {
+  color: #000;
+  font-family: Cairo;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.Temptymssg {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateX(-10%);
+}
+
+.Temptymssg p {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/************* جميع المنتجات (الفئات)*****/
+
+.Ppt {
+  font-size: 32px !important;
+  font-weight: 400px !important;
+  font-family: Cairo;
+  color: var(--Brown);
+}
+
+/* .catg {
+  margin-left: 3.3%;
+
+} */
+.divimgT {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+
+}
+
+.divimgT:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.divimgT img {
+  width: 100%;
+  height: 310px;
+  object-fit: fill;
+  object-position: 0px -25px;
+
+}
+
+.linearDivT {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.019), rgba(0, 0, 0, 0.978));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 3;
+}
+
+.divimgT h5 {
+  z-index: 12;
+  position: absolute;
+  bottom: 7px;
+  font-size: 24px;
+  color: white;
+  margin-right: 12px;
+}
+
+/************ صفحة المنتج (الشركة)*****/
+.TlogoCircle {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+  background: #fff;
+  overflow: hidden;
+  border: 1px solid var(--Brown);
+}
+
+.TlogoCircle img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: center;
+  /* border-radius: 50%; */
+}
+
+.Tateek {
+  margin-top: 1%;
+}
+
+.Tateek h3 {
+  color: #000;
+  font-family: Cairo;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 117.687%;
+}
+
+.Tateek p {
+  color: #817757;
+  font-family: Cairo;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.TPp .Ppt {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  line-height: 117.687% !important;
+}
+
+.TPp .pt {
+  color: #5E6135;
+  font-family: Cairo;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 141.188%;
+  text-transform: capitalize;
+}
+/*********** اضافة منتج جديد************/
+.TaddImg {
+  background-color: #C4C4C4;
+  border-radius: 0.625rem;
+  border: 1px solid #E1E1E1;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imgaddedd {
+  color: #ffffffd6;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TImgSmall {
+  width: 6.3rem;
+  height: 6.3rem;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.TImgLarge {
+  /* width: 14rem; */
+  height: 22.3125rem;
+  flex-shrink: 0;
+}
+.img-view h3{
+  color: #000;
+  font-family: Cairo !important;
+  font-size: 1.3rem !important;
+  font-weight: 400;
+  line-height: 117.687%;
+}
+.img-view img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 100;
+}
+
+.taddDesc {
+  justify-content: center;
+  margin: auto;
+}
+
+.taddDesc button {
+  position: relative;
+  top: 10px;
+}
+
+.taddDescprice {
+  display: none;
+}
+
+.tinput {
+  border: 1px solid #84746A;
+}
+
+textarea {
+  resize: none;
+}
+
+#tnemo::before {
+  content: attr(data-video);
+  /* position: absolute;
+  top: 52%;
+  right:0; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  color: #000;
+  text-align: right !important;
+  font-size: .9rem;
+  z-index: 200;
+  margin: auto;
+}
